@@ -6,7 +6,7 @@ function App() {
     <div>
       { allowAccess ?
       <>
-        <Employee />
+        <Employee name="Reuben" role="Intern"/>
         <Employee />
         <Employee />
       </>
