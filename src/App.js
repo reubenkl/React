@@ -1,12 +1,18 @@
+import Employee from "./components/Employee";
+
 function App() {
+  const allowAccess = true;
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          React learning
-        </h1>
-        <p> Welcome to the first session</p>
-      </header>
+    <div>
+      { allowAccess ?
+      <>
+        <Employee />
+        <Employee />
+        <Employee />
+      </>
+      :
+      <p> You don't have access</p>
+    }
     </div>
   );
 }
